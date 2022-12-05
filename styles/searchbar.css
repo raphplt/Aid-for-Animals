@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+.filters  {
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+.leftFilters{
+  display: flex;
+}
+
+#topBar {
+  height: 55px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 70%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+}
+
+#topBar input {
+  width: 20%;
+}
+
+#topBar select {
+  max-width: 200px;
+}
+
+#topBar .search {
+  padding-left: 35px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 25%;
+  border: 1px solid black;
+  background: url(../src/medias/loupe.png);
+  background-size: 5%;
+  background-repeat: no-repeat;
+  background-position: 2.5% 50%;
+}
+
+#topBar .search:active, .search:hover{
+  border: none;
+}
+
+.form-control{
+  border: 1px solid black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sortBy {
+    display: flex;
+    justify-content: center;
+}
+
+#size, #type, #offers, #gender
+{
+  display: flex;
+}
+
+.value {
+  display: none !important;
+}
+
+.bigHead {
+  font-size: 1.3em;
+  color: rgb(101, 101, 101);
+}
+
+h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+h2 {
+  margin: 0;
+   font-size: 1.3em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+
+h4 {
+  color: #b1b1b1;
+  font-size: 1.1em;
+}
+
+.sortBy h4 {
+  color: #b1b1b1;
+  font-size: 1.1em;
+  padding-top: 5px;
+  margin-right: 10px;
+}
+
+.results {
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 10%;
+}
+
+.resultsNumber{
+  font-size: 1.2em;
+  color: orange;
+}
+
+.box1 {
+  min-width: 120px;
+  display: flex;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.box1 h4{
+  margin-left: 15px;
+}
+
+.box2 {
+  float: left;
+  text-align: center;
+}
+
+.clearMarg {
+  margin: 15px 0;
+}
+
+.prices {
+  margin: 0 auto;
+}
+
+.prices img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.minVal,
+.maxVal {
+  margin-top: 20px;
+  background: url("//d1g3fc5n8s9pjg.cloudfront.net/img/icons/user/ticket-gold.svg") no-repeat;
+  background-size: 25px;
+  padding: 5px 0 5px 25px;
+}
+
+.minVal img,
+.maxVal img {
+  width: 35px;
+}
+
+.minVal h3,
+.maxVal h3 {
+  float: right;
+  clear: none;
+  padding-left: 2px;
+}
+
+.minVal {
+  float: left;
+  clear: none;
+}
+
+.maxVal {
+  float: right;
+  clear: none;
+}
+
+.bump {
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap ;
+}
+
+.box1 input[type="checkbox"] {
+  opacity: 0;
+}
+
+.box1 label {
+  position: relative;
+  display: inline-block;
+  padding-left: 22px;
+}
+
+.box1 label::before,
+.box1 label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+}
+
+.box1 label::before{
+  height: 16px;
+  width: 16px;
+  border: 1px solid;
+  left: 0px;
+  top: 3px;
+}
+
+.box1 label::after {
+  height: 5px;
+  width: 9px;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+  left: 4px;
+  top: 7px;
+}
+
+.box1 input[type="checkbox"] + label::after {
+  content: none;
+}
+
+.box1 input[type="checkbox"]:checked + label::after {
+  content: "";
+}
+
+.box1 input[type="checkbox"]:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
+.filterImage{
+  margin-left: 15px;
+}
+
+.buttonFilter{
+  border: transparent;
+  background: white;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(153, 135, 135);
+  border-radius: 5px 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.buttonFilter:hover{
+  cursor: pointer;
+}
